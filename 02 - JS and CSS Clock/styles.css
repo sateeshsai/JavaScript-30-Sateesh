@@ -1,0 +1,49 @@
+html {
+	font-size: 10px;
+}
+
+* {
+	margin: 0;
+}
+.container {
+	background-color: rgb(101, 0, 189);
+	display: grid;
+	place-items: center;
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+}
+
+.clock-face {
+	background-color: white;
+	width: 30rem;
+	height: 30rem;
+	border-radius: 30rem;
+	display: grid;
+	place-items: center;
+	padding: 2rem;
+}
+
+.hand {
+	width: 15rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 50%;
+	transform-origin: 100%;
+	border-radius: 10rem;
+	transform: rotate(90deg);
+	transition: all 0.08s;
+	transition-timing-function: cubic-bezier(1, 0.01, 0.2, 3);
+	background-color: rgb(136, 0, 255);
+}
+
+.second-hand {
+	transform: rotate(0deg);
+	height: 0.4rem;
+	border-radius: 10rem;
+}
+
+.minute-hand {
+	border-radius: 10rem;
+	height: 0.6rem;
+}
